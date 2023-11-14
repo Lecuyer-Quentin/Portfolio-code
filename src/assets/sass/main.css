@@ -85,7 +85,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: url("../background/heroBackground.jpg") cover no-repeat center fixed;
+  background-image: url("../background/heroBackground.jpg");
+  background-attachment: fixed;
 }
 
 ul, li, h1, h2, h3, p, button {
