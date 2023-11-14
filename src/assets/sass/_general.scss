@@ -14,11 +14,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../background/heroBackground.jpg');
-    background-size:cover;
-    // background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url('../background/heroBackground.jpg') no-repeat center center fixed;
 }
 
 ul, li, h1, h2, h3, p, button{
