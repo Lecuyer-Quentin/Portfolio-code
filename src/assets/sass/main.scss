@@ -1,0 +1,20 @@
+
+@import "./helpers/keyframe";
+@import "./helpers/mixins";
+@import "./general";
+@import "./normalize";
+@import "./responsive";
+@import "./pages/projectsList";
+@import "./pages/project";
+@import "./pages/error404";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/hero";
+@import "./components/contact";
+@import "./components/lastProjects";
+@import "./components/tech";
+@import "./components/collapse";
+@import "./components/button";
+@import "./components/aboutMe";
+@import "./components/framer";

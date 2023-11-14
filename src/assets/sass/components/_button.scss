@@ -1,0 +1,90 @@
+$duration: .4s;
+$border-size: 3px;
+$border-color: blue;
+$button-width: 9rem;
+$button-height: 2.8rem;
+$size-radius: 5px;
+$mainFont: 'Montserrat', sans-serif;
+
+.button {
+    width: $button-width;
+    position: relative;
+    height: $button-height;
+    @include border-radius($size-radius, 'all');
+  
+    &:hover .hoverBtn:before,
+    &:hover .hoverBtn:after {
+        opacity: 1;
+        @include open($button-width, $button-height, $duration);
+    }
+    &:hover .hoverBtn-bottom:before,
+    &:hover .hoverBtn-bottom:after {
+        opacity: 1;
+        @include openb($button-width, $button-height, $duration);
+    }
+  
+    p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: $button-height; 
+        background: rgba(0,0,0,.6);
+   }
+  
+}
+
+.hoverBtn {
+    width: 100%;
+    height: $button-height;
+    position: absolute;
+    top: -1px;
+  
+    &:before {
+        @include sub-button;
+        border-top: solid $border-size $border-color;
+        border-left: solid $border-size $border-color;
+        @include border-radius($size-radius, 'left');
+        right: calc($button-width / 2);
+    }
+    &:after {
+        @include sub-button;
+        border-top: solid $border-size $border-color;
+        border-right: solid $border-size $border-color;
+        @include border-radius($size-radius, 'right');
+        left: calc($button-width / 2);
+    }
+}
+
+.hoverBtn-bottom {
+    width: 100%;
+    height: $button-height;
+    position: absolute;
+    
+    &:before {
+        @include sub-button;
+        height: $button-height;
+        border-bottom: solid $border-size $border-color;
+        @include border-radius($size-radius, 'right');
+        right: 0;
+    }
+    &:after {
+        @include sub-button;
+        height: $button-height;
+        border-bottom: solid $border-size $border-color;
+        @include border-radius($size-radius, 'left');
+        left: 0;
+    }
+}
+
+.btn__back{
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    color: #fff;
+    cursor: pointer;
+    rotate: 180deg;
+
+}

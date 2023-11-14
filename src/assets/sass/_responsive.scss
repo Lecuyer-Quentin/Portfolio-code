@@ -1,0 +1,112 @@
+@media screen and (min-width: 768px) {
+
+    #lastProjects__project{
+        width: 40rem;
+    }
+
+    .tech{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+
+    .projectsList{
+        margin-top: 3rem;;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    .project{
+        &__slider{
+            height: 30rem;
+            & div{
+                height: 30rem !important;
+            }
+        }
+    }
+    .contact{
+        justify-content: center !important;
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    #lastProjects__project{
+        width: 50rem;
+    }
+
+    .tech{
+        margin-top: 75rem !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .project{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+     
+        & h1{
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__slider{
+            width: 30rem !important;
+            height: 30rem;
+            position: absolute !important;
+            top: 25%;
+            left: 10%;
+
+            & div{
+                height: 30rem !important;
+            }
+        }
+        &__content{
+            width: 30rem !important;
+            position: absolute !important;
+            top:30%;
+            left: 53%;
+        }
+
+    }
+
+    .about{
+        height: 60rem !important;
+        &__content{
+            &__progress{
+                &__item{
+            &:nth-child(1){
+                left: 22% !important;
+            }
+            &:nth-child(2){
+                right: 21% !important;
+            }
+            &:nth-child(3){
+                left: 22% !important;
+            }
+            &:nth-child(4){
+                right: 21% !important;
+            }
+          }
+
+            }
+          
+        }
+    }
+
+  }
+  
+

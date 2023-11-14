@@ -1,0 +1,80 @@
+.projectsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+
+    &__card{
+        width: 90%;
+        height: 25rem;
+        margin: 3rem auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.9);
+        background : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        &:hover{
+            transform: scale(1.05);
+            border-radius: 5rem;
+        }
+        & h2, p{
+            text-shadow: 0 0 10px rgba(0,0,0,0.9);
+            color: aliceblue;
+        }
+        & p{
+            margin-bottom: 1rem;
+        }
+        
+        &__images{
+            width: 100%;
+            height: 12rem;
+            position: relative;
+
+            & div{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 0.3s ease-in-out;
+
+                }
+            }  
+        }
+
+        &__technologies{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%);
+
+
+            & img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin: 0 1.5rem;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        
+    }
+}

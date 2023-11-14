@@ -1,0 +1,56 @@
+//* Animation for the button
+@mixin open ($button-width, $button-height, $duration){
+    @keyframes open {
+        0% {
+            width: 0;
+            height: 0;
+        }
+        50% {
+            width: calc($button-width / 2);
+            height: 0;
+        }
+        100% {
+            width: calc($button-width / 2);
+            height: $button-height;
+        }
+    }
+    -webkit-animation: open $duration forwards cubic-bezier(0.39, 0.575, 0.565, 1) normal;
+    animation: open $duration forwards cubic-bezier(0.39, 0.575, 0.565, 1) normal;
+}
+@mixin openb ($button-width, $button-height, $duration){
+    @keyframes openb{
+        0% {
+            width: 0;
+        }
+        100% {
+            width: calc($button-width / 2);
+        }
+    }
+    -webkit-animation: openb $duration forwards cubic-bezier(0.39, 0.575, 0.565, 1) normal;
+    animation: openb $duration forwards cubic-bezier(0.39, 0.575, 0.565, 1) normal;
+}
+@mixin border-radius($size-radius, $sideH) {
+  @if $sideH != 'all' {
+      -webkit-border-top-#{$sideH}-radius: $size-radius;
+      -moz-border-top-#{$sideH}-radius: $size-radius;
+      border-top-#{$sideH}-radius: $size-radius;
+      -webkit-border-bottom-#{$sideH}-radius: $size-radius;
+      -moz-border-bottom-#{$sideH}-radius: $size-radius;
+      border-bottom-#{$sideH}-radius: $size-radius;    
+  } @else if $sideH == 'all' {
+      -webkit-border-radius: $size-radius;
+      -moz-border-radius: $size-radius;
+      border-radius: $size-radius;    
+  }
+}
+
+@mixin sub-button {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    opacity: 0;
+}
+////////////////////////////////*
+  

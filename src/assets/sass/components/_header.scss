@@ -1,0 +1,67 @@
+.header{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__icon{
+            position: absolute;
+            top: .5rem;
+            right: 1rem;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                transform: perspective(100px) scale(1.1);
+            }
+        }
+        
+        & ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+            width: 20rem;
+            position: relative;
+            right: 4rem;
+
+
+            & li,a{
+                margin-left: 1rem;
+                font-size: .9rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                color : white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: perspective(100px) scale(1.1);
+                }
+                &.active{
+                    transform: perspective(100px) scale(1.4);
+                }
+            }
+        }
+
+        &__hoverInfo{
+            position: absolute;
+            top: 2.6rem;
+            border: none;
+        }
+    }
+
+}

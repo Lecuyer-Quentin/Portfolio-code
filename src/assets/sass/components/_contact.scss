@@ -1,0 +1,93 @@
+.contact{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(black, .1);
+    margin-top: 20rem;
+    padding: 20px;
+
+
+    h3{
+        font-size: 2rem;
+        font-weight: 400;
+        position: relative;
+        font-weight: 900;
+    }
+
+    h3,p{
+        text-align: center;
+        position: relative;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+
+    button{
+        position: relative;
+        top: 2rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(darkorchid, .9);
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: rgba(blue, .8);
+        }
+    }
+    
+    // Style for the form
+    // Wait for the form to be added to the DOM
+    // &__form{
+    //     position: relative;
+    //     bottom: 1.5rem;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     width: 90%;
+    //     height: 30rem;
+    //     transition: all .3s ease-in-out;
+
+
+    //     &__input , &__textarea{
+    //         border: none;
+    //         border-radius: 15px;
+    //         padding: 20px 30px;
+    //         font-size: 1.2rem;
+    //         background-color: rgba(blue, .1);
+    //         transition: all .4s ease-in-out;
+    //         &:hover, &:focus{
+    //             background-color: rgba(blue, .8);
+    //             color: violet;
+    //         }
+    //         &::placeholder{
+    //             color: rgba(blue, .5);
+    //         }
+    //         &:hover::placeholder, &:focus::placeholder{
+    //             color: violet;
+    //         }
+    //     }
+
+    //     &__textarea{
+    //         padding-right: 3rem;
+    //         resize: none;   
+    //     }
+
+    //     & button {
+    //         border: none;
+    //         border-radius: 15px;
+    //         padding: 10px 40px;
+    //         font-size: 1.2rem;
+    //         background-color: rgba(violet, .9);
+    //         transition: all .3s ease-in-out;
+    //         position : relative;
+    //         top: 1rem;
+    //         &:hover{
+    //             background-color: rgba(blue, .8);
+    //             color: violet;
+    //         }
+    //     }
+    // }
+}
