@@ -10,8 +10,7 @@ import { faArrowTurnRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = () => {
   const { id } = useParams()
-  const projectsHook = useContext(DataContext);
-  const { getProject } = projectsHook;
+  const {getProject} = useContext(DataContext);
   const [projectData] = useState(getProject(id))
   const { title, description, images = [], technologies = [], tasks = [], link, url } = projectData;
 
@@ -81,6 +80,7 @@ const Project = () => {
   }
 
   const renderDescription = () => {
+    
     const descriptionVariants = {
       hidden: {
         opacity: 0,

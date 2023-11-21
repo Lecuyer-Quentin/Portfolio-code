@@ -89,7 +89,7 @@ const Contact = () => {
 
   return (
       <section id='contact' className='contact'>
-          <h3>Une question, un project ??</h3> <br />
+          <h3>Une question, un projet ?</h3> <br />
             <p>Vous pouvez me contacter par email, je vous répondrai dès que possible.</p>
            <button>
               <a href={mailto} target="_blank" rel="noreferrer">

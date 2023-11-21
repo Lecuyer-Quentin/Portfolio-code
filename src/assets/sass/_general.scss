@@ -5,6 +5,7 @@ body{
     color: #fff;
     overflow-x: hidden;
     width: 100%;
+
 }
 
 main {
@@ -14,7 +15,12 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: url('../background/heroBackground.jpg') fixed;
+    background-image: url('../background/heroBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 
 ul, li, h1, h2, h3, p, button{
